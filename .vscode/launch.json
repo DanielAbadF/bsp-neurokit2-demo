@@ -1,0 +1,26 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ECG Demo",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.ecg_demo",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Batch QRS Comparison",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.batch_demo",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--records", "100", "101", "105", "108", "200", "203",
+                "--minutes", "5"
+            ]
+        }
+    ]
+}
