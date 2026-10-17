@@ -1,0 +1,29 @@
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and local tooling
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Do not commit large or potentially sensitive downloaded recordings
+/data/*
+!/data/README.md
+
+# Generated figures
+/figures/*
+!/figures/README.md
